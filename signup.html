@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login system</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bg-body w-75 mx-auto">
+        <div class="inner p-4 d-flex justify-content-center align-items-center my-5 flex-column text-center">
+            <h1 class="py-4">Smart Login System</h1>
+            <input type="text" oninput="validationName()" class="form-control my-3" placeholder="Enter Your Name" id="signupName">
+            <div id="messName" class="alert alert-danger d-none">It must includes small & capital characters only</div>
+            <input type="text" class="form-control my-3" placeholder="Enter Your Email" id="signupEmail" oninput="validationEmail()">
+            <div id="messEmail" class="alert alert-danger d-none">It must includes numbers and small char , end with .com</div>
+             <input type="password" oninput="validationPassword()" class="form-control my-3" placeholder="Enter Your Password" id="signupPassword">
+             <div id="messPassword" class="alert alert-danger d-none">It must includes chars,digits</div>
+             <button class="btn btn-outline-info w-100 my-3" onclick="add()" id="signupBtn">SIGN UP</button>
+             <div class="mb-3">
+                <span class="text-white fs-6">You have an account?</span>
+                <a href="login.html" target="_self" class="text-white fs-6">Login</a>
+             </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>
